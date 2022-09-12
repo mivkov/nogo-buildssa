@@ -1,0 +1,15 @@
+load("@io_bazel_rules_go//go:def.bzl", "nogo", "go_library", "go_test")
+
+nogo(
+    name = "nogo",
+    config = "nogo.json",
+    visibility = ["//visibility:public"],
+    deps = ["@org_golang_x_tools//go/analysis/passes/buildssa"],
+)
+
+go_library(
+    name = "types",
+    srcs = ["types.go"],
+    importpath = "github.com/mivkov/nogo-buildssa/types",
+    visibility = ["//visibility:public"],
+)
