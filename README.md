@@ -5,7 +5,7 @@ Running `bazel build -- //...` returns
 ```
 INFO: Analyzed 3 targets (0 packages loaded, 0 targets configured).
 INFO: Found 3 targets...
-ERROR: /Users/mivkov/go/src/github.com/mivkov/nogo-buildssa/BUILD.bazel:10:11: GoCompilePkg types.a failed: (Exit 1): builder failed: error executing command bazel-out/darwin_arm64-opt-exec-2B5CBBC6/bin/external/go_sdk/builder compilepkg -sdk external/go_sdk -installsuffix darwin_arm64 -src types.go -embedroot '' -embedroot ... (remaining 21 arguments skipped)
+ERROR: <redacted>/nogo-buildssa/BUILD.bazel:10:11: GoCompilePkg types.a failed: (Exit 1): builder failed: error executing command bazel-out/darwin_arm64-opt-exec-2B5CBBC6/bin/external/go_sdk/builder compilepkg -sdk external/go_sdk -installsuffix darwin_arm64 -src types.go -embedroot '' -embedroot ... (remaining 21 arguments skipped)
 
 Use --sandbox_debug to see verbose messages from the sandbox and retain the sandbox build root for debugging
 compilepkg: panic: unexpected expression-could not match index list to instantiation
